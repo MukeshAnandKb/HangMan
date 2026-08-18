@@ -1,0 +1,22 @@
+words = [
+    "apple", "banana", "orange", "elephant", "giraffe",
+    "tiger", "penguin", "dolphin", "kangaroo", "monkey",
+    "computer", "keyboard", "internet", "python", "program",
+    "developer", "robot", "rocket", "planet", "galaxy",
+    "forest", "mountain", "river", "ocean", "island",
+    "desert", "volcano", "thunder", "rainbow", "castle",
+    "dragon", "wizard", "pirate", "knight", "treasure",
+    "adventure", "football", "cricket", "basketball", "tennis",
+    "guitar", "piano", "drums", "camera", "movie",
+    "music", "school", "teacher", "student", "library",
+    "hospital", "doctor", "engineer", "science", "history",
+    "country", "village", "city", "garden", "flower",
+    "butterfly", "sunflower", "chocolate", "pizza", "burger",
+    "sandwich", "coffee", "cookie", "pancake", "breakfast",
+    "dinner", "birthday", "holiday", "festival", "morning",
+    "evening", "winter", "summer", "autumn", "spring",
+    "diamond", "gold", "silver", "friend", "family",
+    "journey", "dream", "future", "success", "challenge",
+    "mystery", "shadow", "monster", "zombie", "vampire",
+    "spaceship", "astronaut", "universe", "lightning", "rainfall"
+]

@@ -1,3 +1,6 @@
+#DAY 7
+import random
+import words
 print(''' ____   ____       _____  _____   ______         _____         ______  _______         _____  _____   ______   
 |    | |    |  ___|\    \|\    \ |\     \    ___|\    \       |      \/       \    ___|\    \|\    \ |\     \  
 |    | |    | /    /\    \\\    \| \     \  /    /\    \     /          /\     \  /    /\    \\\    \| \     \ 
@@ -10,5 +13,12 @@ print(''' ____   ____       _____  _____   ______         _____         ______  
 |____| |____||____|  |____| |____|   |___|/ \|___|    | /  \|____|      |____|/  |____|  |____| |____|   |___|/
   \(     )/    \(      )/     \(       )/     \( |____|/      \(          )/       \(      )/     \(       )/  
    '     '      '      '       '       '       '   )/          '          '         '      '       '       '   
-                                                   '                                                           ''')
-print("sonnnnnn its an meme reference")
+                                    '                                                           ''')
+#umported from words.py
+target_word=random.choice(words.words)
+chances_till_game_lost=0
+x=len(target_word)
+game_over=False
+#game_over set to false for while loop
+while(not game_over): 
+    
