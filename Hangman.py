@@ -81,11 +81,12 @@ game_over=False                                        #game_over set to false f
 letters=[i for i in target_word]                       #list comprenhension list of letters of target_word
 print("the clue for the given word is :",clue)
 while(not game_over): 
-    guess_letter=input("guess an letter:").lower()    #so no matter what user gives caps letter or small , the input is taken as small letter because thats how it is on the words list on words.py
-    if guess_letter in letters:
-        n=letters.index(guess_letter)
-        guessed[n]=guess_letter
-        letters[n]=-1                                 #because letters in the letters list can be repeated , to account to repeaticility
+    guess_letter=input("guess an letter:").lower()   #so no matter what user gives caps letter or small , the input is taken as small letter because thats how it is on the words list on words.py
+    if guess_letter in letters:                      #.count() method returns the count of certain value on an iterable
+        for i in range(letters.count(guess_letter)): #if apple , user guessed p , by rules of hangman its , _ p p _ _, all the slots of that letter must be filled thats why im implementing this logic
+          n=letters.index(guess_letter)              # .index() method returns index position of first occurance of the guess_letter on the list letters
+          guessed[n]=guess_letter                    #fixing this with my own implementation avaoiding chatGPT blindily
+          letters[n]=-1                                 #because letters in the letters list can be repeated , to account to repeaticility
         for i in guessed:
            print(i,end=" ")
         if "_" not in guessed:                        #condition to check if all the blanks are filled(Winning criteria)
