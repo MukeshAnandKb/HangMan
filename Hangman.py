@@ -94,10 +94,6 @@ while(not game_over):
             print(i,end=" ")
         if 0 not in guessed:
            print("GAME OVER YOU WON")
-           print('''  \o/  Yay! You saved me!
-                       |   
-                      / \  
-''')
            game_over=True
         if not game_over:  #to skip rest of current iteration of the while loop use continue keyword
           continue
