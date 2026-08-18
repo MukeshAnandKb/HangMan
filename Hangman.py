@@ -2,7 +2,7 @@
 import random
 import words
 clue=words.clues
-def lose_image(chance_till_game_lost):
+def lose_image(chances_till_game_lost):
    if chances_till_game_lost==1:
       print('''
   +---+
