@@ -92,7 +92,7 @@ while(not game_over):
             print("_",end=" ")  #to simulate _ _ _ _ _ a _ for example
            else:
             print(i,end=" ")
-        if 0 not in guessed:
+        if 0 not in guessed:#condition to check if all the blanks are filled
            print("GAME OVER YOU WON")
            game_over=True
         if not game_over:  #to skip rest of current iteration of the while loop use continue keyword
