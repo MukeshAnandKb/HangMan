@@ -100,3 +100,4 @@ while(not game_over):
           print("\n\nTHE WORD WAS",target_word)
           game_over=True                              #loop stop condition
       
+
