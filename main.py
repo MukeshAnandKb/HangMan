@@ -85,7 +85,7 @@ while(not game_over):
     if guess_letter in letters:                      #.count() method returns the count of certain value on an iterable
         for i in range(letters.count(guess_letter)): #if apple , user guessed p , by rules of hangman its , _ p p _ _, all the slots of that letter must be filled thats why im implementing this logic
           n=letters.index(guess_letter)              # .index() method returns index position of first occurance of the guess_letter on the list letters
-          guessed[n]=guess_letter                    #fixing this with my own implementation avaoiding chatGPT blindily
+          guessed[n]=guess_letter                    #fixing this with my own implementation avoiding chatGPT blindily
           letters[n]=-1                                 #because letters in the letters list can be repeated , to account to repeaticility
         for i in guessed:
            print(i,end=" ")
@@ -99,5 +99,3 @@ while(not game_over):
           print("GAME OVER YOU LOST")
           print("\n\nTHE WORD WAS",target_word)
           game_over=True                              #loop stop condition
-      
-
